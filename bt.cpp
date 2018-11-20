@@ -17,7 +17,7 @@ float Average(int B[10],int n){
 	float S=0;
 	for (int i=0;i<n;i++)
 	S+=B[i];
-	return S/10;
+	return S/n;
 }
 void Dec(int B[10],int n){
 	for (int i=0;i<n;i++){
@@ -31,7 +31,9 @@ void Dec(int B[10],int n){
 	}
 }
 main(){
-	int n=10;
+	int n;
+	printf("Nhap so phan tu mang: ");
+	scanf("%d", &n);
 	int B[n];
 	Init(B, n);
 	printf("Mang vua nhap: ");
